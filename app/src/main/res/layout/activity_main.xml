@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Land Name EditText -->
+    <EditText
+        android:id="@+id/etLandName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Land Name"
+        android:layout_margin="16dp" />
+
+    <!-- Buyer Address EditText -->
+    <EditText
+        android:id="@+id/etBuyerAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Buyer Address"
+        android:layout_below="@id/etLandName"
+        android:layout_margin="16dp" />
+
+    <!-- Building Type EditText -->
+    <EditText
+        android:id="@+id/etBuildingType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Building Type"
+        android:layout_below="@id/etBuyerAddress"
+        android:layout_margin="16dp" />
+
+    <!-- Enter Land Button -->
+    <Button
+        android:id="@+id/btnEnter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etBuildingType"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Enter Land" />
+
+    <!-- Show Land Button -->
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Land"
+        android:layout_below="@id/btnEnter"
+        android:layout_margin="16dp" />
+
+    <!-- Transfer Land Button -->
+    <Button
+        android:id="@+id/btnTransfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transfer Land"
+        android:layout_below="@id/btnShow"
+        android:layout_margin="16dp" />
+
+    <!-- View History Button -->
+    <Button
+        android:id="@+id/btnHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View History"
+        android:layout_below="@id/btnTransfer"
+        android:layout_margin="16dp" />
+
+    <!-- Construction Approval Button -->
+    <Button
+        android:id="@+id/btnConstructionApproval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Construction Approval"
+        android:layout_below="@id/btnHistory"
+        android:layout_margin="16dp" />
+
+    <!-- TextView for Contract Results -->
+    <TextView
+        android:id="@+id/tvContractResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:layout_below="@id/btnConstructionApproval"
+        android:layout_margin="16dp" />
+</RelativeLayout>
